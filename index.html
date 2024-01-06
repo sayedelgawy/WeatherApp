@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather</title>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-smooth-scroll="true"
+  >
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <div class="logo-image pe-3">
+              <img src="./images/logo.png" alt="logo image" class="w-100" />
+            </div>
+
+            <div class="logo-content">
+              <h1 class="h6">Weather</h1>
+              <small>tagline goes here</small>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item p-2">
+                <a class="nav-link text-white" href="index.html#home">Home</a>
+              </li>
+
+              <li class="nav-item p-2">
+                <a class="nav-link text-white" href="#">News</a>
+              </li>
+
+              <li class="nav-item p-2">
+                <a class="nav-link text-white" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link text-white" href="#">Photos</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link text-white" href="contact.html#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section id="home" class="py-5">
+      <div class="searchInputs container py-5 position-relative">
+        <input
+          type="text"
+          id="search"
+          class="form-control rounded-pill placeholder-grey big-button"
+          placeholder="Find your location..."
+        />
+        <button id="find" class="small-button btn rounded-pill btn-info">
+          Find
+        </button>
+      </div>
+      <div class="container">
+        <div class="forecast-container row overflow-hidden g-0" id="forecast">
+          
+        </div>
+      </div>
+    </section>
+    <footer class="pt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-1">
+            <div class="py-5 position-relative ">
+              <input
+                type="text"
+                class="form-control rounded-pill placeholder-grey big-button"
+                placeholder="Enter your email to subscribe..."
+              />
+              <button class="small-button subscribe-button btn rounded-pill btn-info">
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="social-links h-100 text-end">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p class="text-of-footer py-3 text-sm-center text-md-start">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
