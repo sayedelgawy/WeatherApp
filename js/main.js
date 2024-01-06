@@ -34,7 +34,7 @@ function printData(result) {
     let currentMonth = getMonthName(new Date(result.current.last_updated));
     let secondDay = getDayName(new Date(result.forecast.forecastday[1].date));
     let thirdDay = getDayName(new Date(result.forecast.forecastday[2].date));
-    console.log(result.current);
+    
     forecastContainer.innerHTML = `
             
             <div class="today forecast col-md-4">
